@@ -5,6 +5,10 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+# গিটহাব অ্যাকশনকে পারমিশন দেওয়ার জন্য এটি যোগ করা হলো
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
