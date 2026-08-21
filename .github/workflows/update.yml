@@ -1,0 +1,31 @@
+name: Toffee Auto Playlist Update
+
+on:
+  schedule:
+    # প্রতিদিন প্রতি ৬ ঘণ্টা পর পর অটোমেটিক রান করবে
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # এটি দিয়ে আপনি যখন খুশি হাত দিয়ে (Manually) রান করাতে পারবেন
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Run Auto Script
+      run: |
+        python main.py
+
+    - name: Commit and push changes if playlist updated
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+        git add .
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update playlist [skip ci]" && git push)
