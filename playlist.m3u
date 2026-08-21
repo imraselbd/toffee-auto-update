@@ -1,7 +1,10 @@
 #EXTM3U
-#EXT-X-VERSION:3
-#EXTINF:-1 tvg-id="Toffee" tvg-name="Toffee Live" tvg-logo="" group-title="Toffee",Toffee Live Stream
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXT-X-SESSION-DATA:DATA-ID="Cookie",URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787509136:KeyName=prod_linear:Signature=XfxLXC5YfW36noO0slGJgcbwIxfROWRVaTsHXBxJPIHz3AYsaXFnru63iLtgIeTW_UUr_L4-6IOrEoNXZ745DQ
-# Updated at: 2026-08-21 18:27:25
-https://toffeelive.com/en/watch/o3v235oBcqxnFHJBkAdC
+#EXTINF:-1 tvg-logo="https://images.toffeelive.com/images/program/333/logo/240x240/mobile_logo_146607001735536058.png" group-title="News Channel",CNN VIP
+#EXTVLCOPT:http-user-agent=okhttp/4.11.0
+https://bldcmprod-cdn.toffeelive.com/cdn/live/cnn/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com//Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png" group-title="News Channel",Somoy TV
+#EXTVLCOPT:http-user-agent=okhttp/4.11.0
+https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/ES_cZZsBNnOkwJLW1Oz1/posters/b872b8f5-cb6b-45a1-a1cd-7609df51d614.png" group-title="News Channel",Independent TV
+#EXTVLCOPT:http-user-agent=okhttp/4.11.0
+https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/playlist.m3u8
