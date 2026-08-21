@@ -11,10 +11,10 @@ try:
     if not cookie_value:
         raise Exception("Error: Toffee Cookie not found in Secrets!")
 
-    # বর্তমান সময় বা ডেট বের করা (অটো আপডেট দেখানোর জন্য)
+    # বর্তমান সময় বা ডেট বের করা
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # আপনার চ্যানেলগুলোর ডেটা তালিকা
+    # আপনার চ্যানেলগুলোর ডেটা তালিকা (এখানে কুকি সঠিকভাবে যুক্ত করা হয়েছে)
     channels_list = [
         {
           "category_name": "News Channel",
@@ -22,7 +22,7 @@ try:
           "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/cnn/playlist.m3u8",
           "headers": {
             "Host": "bldcmprod-cdn.toffeelive.com",
-            "cookie": Edge-Cache-Cookie=cookie_value,
+            "cookie": f"Edge-Cache-Cookie={cookie_value}",
             "user-agent": "okhttp/4.11.0",
             "client-api-header": "angM1aXCHQLmmSW6cDlpXMD6tLdwnhMoUeaBBFKmd98bX6Vrae5xCMbm4gg0+u33rnxeGQDZNr2GD1tW0cWwKEpWimNlGqXVQGhpiIBz1JFxN+OxXcQqaMPrjwUhCyI5mO1DGyNv18+Z2EpmHtVnLzV9SrGsQWu4oRKjxE8QIMsRs6LrvL6hWGPlOGQke/qb5QxQZNetPzI39jHhX7Zi2XrCMIT4a+gk2Wu1c3wIybwkqknPcTp4Bj1cEF3Q+q1dV05SBhzpEDfoR2BLyQ6dV3LvmY6MNKxbUjby7hMsg35lFl2Df2mZsr7C27309w/qWi8lLXDjB7B1MozIGKn8rw3bXY5YlrPKBKztyiisAjQQi7kc5ISXyGSwRmhciwkciuitsSL0LlqHY7/Qkkh71EtaK3XEgVpLdH8zRCsTwfu1iIVPiDwTycuuBy4XWkcNnd0iLB35yftQpiL8HfpO2jQnrAwzePxszJ7mewVG+M0P/qyTBD52NkPR8uW0AZmDKp5LHTCGf7sqldDzpZvU+gsSdvtsBUcmHzjINGEoyXk=",
             "accept-encoding": "gzip",
@@ -37,7 +37,7 @@ try:
           "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8",
           "headers": {
             "Host": "bldcmprod-cdn.toffeelive.com",
-            "cookie": Edge-Cache-Cookie=cookie_value,
+            "cookie": f"Edge-Cache-Cookie={cookie_value}",
             "user-agent": "okhttp/4.11.0",
             "client-api-header": "angM1aXCHQLmmSW6cDlpXMD6tLdwnhMoUeaBBFKmd98bX6Vrae5xCMbm4gg0+u33rnxeGQDZNr2GD1tW0cWwKEpWimNlGqXVQGhpiIBz1JFxN+OxXcQqaMPrjwUhCyI5mO1DGyNv18+Z2EpmHtVnLzV9SrGsQWu4oRKjxE8QIMsRs6LrvL6hWGPlOGQke/qb5QxQZNetPzI39jHhX7Zi2XrCMIT4a+gk2Wu1c3wIybwkqknPcTp4Bj1cEF3Q+q1dV05SBhzpEDfoR2BLyQ6dV3LvmY6MNKxbUjby7hMsg35lFl2Df2mZsr7C27309w/qWi8lLXDjB7B1MozIGKn8rw3bXY5YlrPKBKztyiisAjQQi7kc5ISXyGSwRmhciwkciuitsSL0LlqHY7/Qkkh71EtaK3XEgVpLdH8zRCsTwfu1iIVPiDwTycuuBy4XWkcNnd0iLB35yftQpiL8HfpO2jQnrAwzePxszJ7mewVG+M0P/qyTBD52NkPR8uW0AZmDKp5LHTCGf7sqldDzpZvU+gsSdvtsBUcmHzjINGEoyXk=",
             "accept-encoding": "gzip",
@@ -52,7 +52,7 @@ try:
           "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/playlist.m3u8",
           "headers": {
             "Host": "bldcmprod-cdn.toffeelive.com",
-            "cookie": Edge-Cache-Cookie=cookie_value,
+            "cookie": f"Edge-Cache-Cookie={cookie_value}",
             "user-agent": "okhttp/4.11.0",
             "client-api-header": "angM1aXCHQLmmSW6cDlpXMD6tLdwnhMoUeaBBFKmd98bX6Vrae5xCMbm4gg0+u33rnxeGQDZNr2GD1tW0cWwKEpWimNlGqXVQGhpiIBz1JFxN+OxXcQqaMPrjwUhCyI5mO1DGyNv18+Z2EpmHtVnLzV9SrGsQWu4oRKjxE8QIMsRs6LrvL6hWGPlOGQke/qb5QxQZNetPzI39jHhX7Zi2XrCMIT4a+gk2Wu1c3wIybwkqknPcTp4Bj1cEF3Q+q1dV05SBhzpEDfoR2BLyQ6dV3LvmY6MNKxbUjby7hMsg35lFl2Df2mZsr7C27309w/qWi8lLXDjB7B1MozIGKn8rw3bXY5YlrPKBKztyiisAjQQi7kc5ISXyGSwRmhciwkciuitsSL0LlqHY7/Qkkh71EtaK3XEgVpLdH8zRCsTwfu1iIVPiDwTycuuBy4XWkcNnd0iLB35yftQpiL8HfpO2jQnrAwzePxszJ7mewVG+M0P/qyTBD52NkPR8uW0AZmDKp5LHTCGf7sqldDzpZvU+gsSdvtsBUcmHzjINGEoyXk=",
             "accept-encoding": "gzip",
@@ -80,7 +80,7 @@ try:
     print("toffee.json successfully generated and updated!")
 
 except Exception as e:
-    # কোনো সমস্যা বা এরর হলে ফেইল মেসেজ দিয়ে JSON ফাইল তৈরি করবে
+    # কোনো সমস্যা হলে এরর মেসেজসহ JSON ফাইল তৈরি করবে
     error_output = {
         "status": "error",
         "message": str(e),
