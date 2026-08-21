@@ -1,3 +1,7 @@
 #EXTM3U
-# Updated at: 2026-08-21 18:15:35
-# यहाँ আপনার টফির লিংক বা কুকি থাকবে
+#EXT-X-VERSION:3
+#EXTINF:-1 tvg-id="Toffee" tvg-name="Toffee Live" tvg-logo="" group-title="Toffee",Toffee Live Stream
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXT-X-SESSION-DATA:DATA-ID="Cookie",URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787509136:KeyName=prod_linear:Signature=XfxLXC5YfW36noO0slGJgcbwIxfROWRVaTsHXBxJPIHz3AYsaXFnru63iLtgIeTW_UUr_L4-6IOrEoNXZ745DQ
+# Updated at: 2026-08-21 18:27:25
+https://toffeelive.com/en/watch/o3v235oBcqxnFHJBkAdC
