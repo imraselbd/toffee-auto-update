@@ -2,9 +2,8 @@ name: Toffee Auto Playlist Update
 
 on:
   schedule:
-    # প্রতিদিন প্রতি ৬ ঘণ্টা পর পর অটোমেটিক রান করবে
     - cron: '0 */6 * * *'
-  workflow_dispatch: # এটি দিয়ে আপনি যখন খুশি হাত দিয়ে (Manually) রান করাতে পারবেন
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,7 +14,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: setup-python@v5
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
